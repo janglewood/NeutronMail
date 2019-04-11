@@ -2,6 +2,9 @@ body {
     width: 100%;
     height: 100%;
 }
+a {
+    text-decoration: none;
+}
 .pageWrapper {
     max-width: 1800px;
     width: 100%;
@@ -22,6 +25,7 @@ body {
 .headerFirstLine {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 .logo {
     font: bold 30px Titillium Web;
@@ -33,14 +37,46 @@ body {
 .languages ul {
     display: flex;
     flex-direction: row;
+    max-width: 236px;
+    width: 100%;
+    justify-content: space-between;
     list-style: none;
     font: 14px Titillium Web;
     color: #959595;
     padding: 0;
 }
-.languages li {
-    padding: 0 10px 0 0;
+.languages li>a {
+    color: #959595;
 }
 .languages li:nth-child(odd) {
     cursor: pointer;
+}
+.languages li:hover {
+    font-weight: bold;
+}
+.languages li>a:focus {
+    font-weight: bold;
+    text-decoration: underline;
+}
+.menuContainer nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 413px;
+    font: 14px Titillium Web;
+    color: #959595;
+    padding: 0;
+}
+.menuContainer ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+.menuContainer button {
+    color: white;
+    font: 14px Titillium Web;
+    border-radius: 20px;
+    background-color: 
 }
