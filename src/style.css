@@ -1,0 +1,46 @@
+body {
+    width: 100%;
+    height: 100%;
+}
+.pageWrapper {
+    max-width: 1800px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.headerContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 200px;
+}
+.headerFirstLine {
+    display: flex;
+    flex-direction: row;
+}
+.headerFirstLine {
+    display: flex;
+    flex-direction: row;
+}
+.logo {
+    font: bold 30px Titillium Web;
+    color: #858688;
+}
+.logo .violet {
+    color: #5b4295;
+}
+.languages ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    font: 14px Titillium Web;
+    color: #959595;
+    padding: 0;
+}
+.languages li {
+    padding: 0 10px 0 0;
+}
+.languages li:nth-child(odd) {
+    cursor: pointer;
+}
