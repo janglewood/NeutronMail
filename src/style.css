@@ -10,10 +10,10 @@ a {
 .pageWrapper {
     max-width: 1400px;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     margin: 0 auto;
 }
 .headerContainer {
@@ -33,8 +33,11 @@ a {
     font: bold 30px Titillium Web;
     color: #858688;
 }
-.logo .violet {
+.violet {
     color: #5b4295;
+}
+.red {
+    color: #fc444b;
 }
 .languages {
     display: flex;
@@ -127,5 +130,38 @@ a {
 .logContainer li:hover {
     cursor: pointer;
 }
-
-
+main {
+    width: 100%;
+    height: 100%;
+}
+.centralElementContainer {
+    background-image: url('./accets/mountains.png');
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.centralElementContainer>div {
+    display: flex;
+    flex-direction: column;
+    margin-top: -166px;
+    font: 60px Titillium Web;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+.centralElementContainer h2 {
+    font: 60px Titillium Web;
+    color: #454545;
+    font-weight: bold;
+    margin: 0;
+}
+  .centralElementContainer>div>span {
+    font: 37px Titillium Web;
+}
