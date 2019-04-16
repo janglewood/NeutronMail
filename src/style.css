@@ -49,23 +49,20 @@ a {
 .languages>a {
     color: #959595;
 }
-.languages>a:nth-child(odd) {
+.languages>a:nth-child(odd):hover {
     cursor: pointer;
-}
-.languages>a:hover {
     font-weight: bold;
 }
 .languages>a:focus {
     font-weight: bold;
-    text-decoration: underline;
+    border-bottom: 1px solid #959595;
 }
 .menuContainer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: 671px;
-    font: 16px Titillium Web;
-    color: #454545;
+
     padding: 0;
 }
 .menuContainer nav{
@@ -84,6 +81,14 @@ a {
     justify-content: space-between;
     padding: 0;
 }
+.menuContainer ul>li>a {
+    font: 16px Titillium Web;
+    color: #454545;
+}
+.menuContainer ul>li>a:hover {
+    cursor: pointer;
+}
+
 .menuContainer .logContainer {
     display: flex;
     flex-direction: row;
@@ -93,6 +98,9 @@ a {
 }
 .logContainer>ul>li:nth-child(1) {
     margin-top: 68px;
+    font: 16px Titillium Web;
+    color: #454545;
+    font-weight: bold;
 }
 .menuContainer .button {
     color: white;
@@ -103,11 +111,21 @@ a {
     margin-top: 62px;
     font-weight: bold;
     font-size: 16px;
-    box-shadow: 0px 10px 20px 0px rgb(107, 107, 166);
+    box-shadow: 0px 10px 20px 0px rgb(107, 107, 166),
+                inset 0px -4px 14px 0px #3a1958;
+    transition: box-shadow 0.05s ease-in-out;
+}
+.menuContainer .button:active {
+    box-shadow: 0px 0px 0px 0px rgb(107, 107, 166),
+                inset 0px 3px 5px 2px #3a1958;
+    color: rgb(248, 248, 248);
 }
 .logContainer i {
     color: #582c7e;
     margin-right: 6px;
+}
+.logContainer li:hover {
+    cursor: pointer;
 }
 
 
