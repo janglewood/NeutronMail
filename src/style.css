@@ -1,26 +1,33 @@
 body {
     width: 100%;
-    height: 100%;
+    height: 100vh;
     margin: 0 auto;
     max-width: 1800px;
 }
 a {
     text-decoration: none;
 }
-.pageWrapper {
-    max-width: 1400px;
+header {
     width: 100%;
-    height: 100vh;
+}
+.pageWrapper {
+    max-width: 1800px;
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    align-items: center;
     margin: 0 auto;
+    background-image: url(./accets/mountains.png);
 }
 .headerContainer {
     display: flex;
     flex-direction: row;
     width: 100%;
     justify-content: space-between;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 .logoContainer {
     display: flex;
@@ -135,26 +142,12 @@ main {
     height: 100%;
 }
 .centralElementContainer {
-    background-image: url('./accets/mountains.png');
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-}
-.centralElementContainer>div {
     display: flex;
     flex-direction: column;
-    margin-top: -166px;
     font: 60px Titillium Web;
     justify-content: space-between;
     align-items: center;
-    height: 100px;
+    margin-top: 146px;
 }
 .centralElementContainer h2 {
     font: 60px Titillium Web;
@@ -162,6 +155,8 @@ main {
     font-weight: bold;
     margin: 0;
 }
-  .centralElementContainer>div>span {
+  .centralElementContainer h4 {
     font: 37px Titillium Web;
+    margin: 0;
+    line-height: 1;
 }
