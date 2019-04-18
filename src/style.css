@@ -150,7 +150,7 @@ main {
     justify-content: space-between;
     align-items: center;
     margin-top: 146px;
-    margin-bottom: 266px;
+    margin-bottom: 334px;
 }
 .centralElementContainer h2 {
     font: 60px Titillium Web;
@@ -240,6 +240,8 @@ main {
     max-width: 1400px;
     width: 100%;
     margin: 0 auto;
+    margin-left: 14%;
+    position: relative;
 }
 .productBenefitsContainer>div:nth-child(1) {
     display: flex;
@@ -250,7 +252,7 @@ main {
 .productBenefitsContainer>div>div {
     display: flex;
     flex-direction: column;
-    width: 33.3%
+    width: 25%
 }
 .productBenefitsContainer>div div>.title {
     display: flex;
@@ -265,10 +267,6 @@ main {
 .productBenefitsContainer p {
     font-size: 14px;
 }
-/*.productBenefitsContainer img {
-    width: 72px;
-    height: 68px;
-}*/
 .productBenefitsContainer>div:nth-child(2) {
     display: flex;
     flex-direction: column;
@@ -285,11 +283,43 @@ main {
 .verticalLine {
     width: 1px;
     background-color: #b9b9b9;
+    position: absolute;
 }
 .horizontalLine {
     height: 1px;
     width: 150px;
     background-color: #b9b9b9;
+    position: absolute;
+}
+.productBenefitsContainer>div:nth-child(1)>div:nth-child(2) {
+    margin-left: -4%;
+}
+.productBenefitsContainer>div:nth-child(1)>div:nth-child(3) {
+    margin-right: 4%;
+}
+.productBenefitsContainer p {
+    margin-left: 12px;
+}
+.productBenefitsContainer .title>div>div:nth-child(1) {
+    line-height: 1;
+}
+.productBenefitsContainer>div:nth-child(1)>div:nth-child(2)>p {
+    margin-left: 40px;
+}
+.verticalLine:nth-of-type(1) {
+    top: 776px;
+    left: 714px;
+    height: 218px;
+}
+.verticalLine:nth-of-type(2) {
+    top: 917px;
+    left: 1148px;
+    height: 359px;
+}
+.horizontalLine {
+    top: 905px;
+    left: 1610px;
+    width: 190px;
 }
 
 /*
