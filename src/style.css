@@ -399,4 +399,49 @@ main {
     color: #989898;
     font-size: 16px;
 }
+.downloadContainer {
+    display: flex;
+    flex-direction: column;
+    font-family: Titillium Web;
+    color: #535353;
+    background-color: #e8e6e6;
+}
+.downloadContainer>div {
+    display: flex;
+    flex-direction: column;
+    max-width: 445px;
+    text-align: end;
+    align-self: center;
+    margin-top: 98px;
+    margin-left: -40px;
+    z-index: 2;
+}
+.downloadContainer>div span:nth-child(1) {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+.downloadContainer>div span:nth-child(3) {
+    margin-top: 23px;
+}
+.downloadContainer>div span:nth-child(3)>img:nth-child(1) {
+    margin-right: 6px;
+}
+.downloadContainer>div span:nth-child(3)>img:nth-child(2) {
+    margin-right: -2px;
+}
+.downloadContainer>img {
+    width: 578px;
+    height: 670px;
+    margin-left: 0px;
+    position: absolute;
+    top: 1560px;
+    left: 951px;
+    z-index: 1;
+}
+.downloadContainer>.horizontalLine {
+    position: absolute;
+    top: 2211px;
+    left: 399px;
+    width: 1401px;
+}
 
