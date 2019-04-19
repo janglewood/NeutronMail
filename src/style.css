@@ -1,3 +1,12 @@
+
+@font-face {
+    font-family: Malaga;
+    src: url('./accets/fonts/Malaga\ OT\ Reg\ Italic.otf');
+}
+@font-face {
+    font-family: Titillium Web;
+    src: url('./accets/fonts/TitilliumWeb-Regular.ttf');
+}
 body {
     width: 100%;
     height: 100vh;
@@ -62,6 +71,11 @@ header {
 .languages>a:nth-child(odd):hover {
     cursor: pointer;
     font-weight: bold;
+}
+.languages>a:nth-child(even) {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
 .languages>a:focus {
     font-weight: bold;
@@ -338,33 +352,51 @@ main {
     color: #676767;
     border: 1px solid #676767;
     border-radius: 30px;
+    font-weight: normal;
 }
-.Learn_more_about_our_security_features {
+.reviewsContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: #e8e6e6;
+}
+.companies {
+    display: flex;
+    flex-direction: row;
+    margin-top: 38px;
+    margin-left: 20px;
+}
+.sliderContainer {
+    display: flex;
+    flex-direction: row;
+    font-family: Malaga;
+    font-weight: normal;
+    font-size: 25px;
+    max-width: 525px;
+    margin-left: 366px;
+    margin-top: 66px;
+}
+.slides {
+    display: flex;
+    flex-direction: column;
+}
+.sliderContainer>span:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 57px;
+    margin-right: 24px;
+}
+.breadCrumds {
+    width: 12px;
+    height: 12px;
+    border-radius: 30px;
+    background-color: #b7b7b7;
+}
+.breadCrumds:nth-of-type(1) {
+    background-color: #000000;
+}
+.slider>span:nth-child(1)>span {
+    color: #989898;
     font-size: 16px;
-    font-family: "TitilliumWeb";
-    color: rgb(103, 103, 103);
-    line-height: 1.375;
-    text-align: center;
-    position: absolute;
-    left: 825.54px;
-    top: 1393.546px;
-    width: 273px;
-    height: 16px;
-    z-index: 93;
-  }
-  
-/*
-.NeutronMail_s_infrastructure_resides_in_Europe_ {
-  font-size: 24px;
-  font-family: "TitilliumWeb";
-  color: rgb(149, 147, 147);
-  line-height: 0.917;
-  position: absolute;
-  left: 450.082px;
-  top: 1300.984px;
-  width: 622px;
-  height: 44px;
-  z-index: 91;
 }
 
-*/
